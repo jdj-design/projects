@@ -4,9 +4,8 @@
  */
 exports.up = function(knex) {
   return knex.schema.createTable('pet_type', table => {
-    table.increments('id');
-    table.string('name').notNullable();
-    table.timestamps(true, true);
+    table.increments();
+    table.string('name', 250);
   });
 };
 

@@ -30,7 +30,7 @@ export default function History() {
             <ul>
 
     {results.map((result) => (
-        <li key={result.id}>{result.race_name}<br></br> {result.distance}</li>
+        <li key={result.id}>{result.race_name}<br></br> Distance: {result.distance} |Place: {result.place}<br></br>Time: {result.finish_time}</li>
     ))}
     </ul>
   </div>
